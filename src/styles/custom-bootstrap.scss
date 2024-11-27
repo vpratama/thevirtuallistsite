@@ -1,0 +1,14 @@
+// src/styles/_custom-bootstrap.scss
+
+// Override Bootstrap variables
+$primary: #e91e63; // Primary color
+$primary-light: #f8bbd0; // Light primary color
+$primary-dark: #c2185b; // Dark primary color
+$accent: #03a9f4; // Accent color
+$body-bg: #FFFFFF; // Background color
+$text-color: #212121; // Primary text color
+$text-secondary: #757575; // Secondary text color
+$divider-color: #BDBDBD; // Divider color
+
+// Import Bootstrap SCSS
+@import 'bootstrap/scss/bootstrap';
