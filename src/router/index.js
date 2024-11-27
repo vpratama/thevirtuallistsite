@@ -4,9 +4,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import AboutMe from '../views/AboutMe.vue'
 import CosplayProjects from '../views/CosplayProjects.vue'
+import Galery from '../views/Galery.vue'
 import Contact from '../views/Contact.vue'
-import NewsFromFB from '../views/NewsFromFB.vue'
-import NewsFromIG from '../views/NewsFromIG.vue'
 
 const routes = [
     {
@@ -25,19 +24,14 @@ const routes = [
       component: CosplayProjects
     },
     {
+      path: '/galery',
+      name: 'galery',
+      component: Galery
+    },
+    {
       path: '/contactme',
       name: 'contactme',
       component: Contact
-    },
-    {
-      path: '/newsfromfb',
-      name: 'newsfromfb',
-      component: NewsFromFB
-    },
-    {
-      path: '/newsfromig',
-      name: 'newsfromig',
-      component: NewsFromIG
     }
 ]
 

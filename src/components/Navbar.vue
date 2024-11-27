@@ -9,9 +9,8 @@
                 <router-link :to="{name: 'home'}" class="nav-item" activeClass="active">Home</router-link>
                 <router-link :to="{name: 'aboutme'}" class="nav-item" activeClass="active">About Me</router-link>
                 <router-link :to="{name: 'cosplayprojects'}" class="nav-item" activeClass="active">Cosplay Projects</router-link>
+                <router-link :to="{name: 'galery'}" class="nav-item" activeClass="active">Galery</router-link>
                 <router-link :to="{name: 'contactme'}" class="nav-item" activeClass="active">Contact Me</router-link>
-                <router-link :to="{name: 'newsfromfb'}" class="nav-item" activeClass="active">News From FB</router-link>
-                <router-link :to="{name: 'newsfromig'}" class="nav-item" activeClass="active">News From IG</router-link>
             </b-navbar-nav>    
         </b-collapse>
     </b-navbar>
