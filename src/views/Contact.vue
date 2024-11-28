@@ -30,4 +30,34 @@
     .social-media img:hover {
         transform: scale(2);
     }
+
+    /* hp panjang */
+    @media (min-width: 280px) and (max-width: 320px) {
+        
+    }
+
+    /* hp */
+    @media (min-width: 321px) and (max-width: 480px) {
+        
+    }
+
+    /* tablet mini */
+    @media (min-width: 481px) and (max-width: 768px) {
+        
+    }
+
+    /* tablet / desktop layar kecil */
+    @media (min-width: 769px) and (max-width: 1024px) {
+
+    }
+
+    /* tablet / desktop layar besar */
+    @media (min-width: 1025px) and (max-width: 1200px) {
+        
+    }
+
+    /* tablet / desktop layar extra besar */
+    @media (min-width: 1201px) {
+        
+    }
 </style>
