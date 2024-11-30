@@ -19,7 +19,8 @@
     @media (min-width: 280px) and (max-width: 320px) {
         .row {
             width: 100vw;
-            padding-right: 0px;
+            margin-right: 0;
+            margin-left: 0;
             display: flex;
             flex-direction: row;
             .col-sm-8.cover {
@@ -63,7 +64,8 @@
     @media (min-width: 321px) and (max-width: 480px) {
         .row {
             width: 100vw;
-            padding-right: 0px;
+            margin-right: 0;
+            margin-left: 0;
             display: flex;
             flex-direction: row;
             .col-sm-8.cover {

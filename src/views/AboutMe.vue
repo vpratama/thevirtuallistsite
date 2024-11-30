@@ -21,20 +21,22 @@
     @media (min-width: 280px) and (max-width: 320px) {
         .row {
             width: 100vw;
+            margin-right: 0;
+            margin-left: 0;
             .col-md-4 {
                 position: absolute;
                 top: 0;
                 left: 0;
                 bottom: 0;
-                z-index: 1000;
+                z-index: 99;
                 .container {
                     h1 {
                         font-size: 30px;
-                        font-color: white;
+                        color: white;
                     }
                     h4 {
                         font-size: 20px;
-                        font-color: white;
+                        color: white;
                     }
 
                     p.scrollable {
@@ -42,7 +44,7 @@
                         overflow-y: auto;
                         padding-right: 15px;
                         font-size: 10px;
-                        font-color: white;
+                        color: white;
                     }
 
                 }
@@ -63,20 +65,22 @@
     @media (min-width: 321px) and (max-width: 480px) {
         .row {
             width: 100vw;
+            margin-right: 0;
+            margin-left: 0;
             .col-md-4 {
                 position: absolute;
                 top: 0;
                 left: 0;
                 bottom: 0;
-                z-index: 1000;
+                z-index: 99;
                 .container {
                     h1 {
                         font-size: 30px;
-                        font-color: white;
+                        color: white;
                     }
                     h4 {
                         font-size: 20px;
-                        font-color: white;
+                        color: white;
                     }
 
                     p.scrollable {
@@ -84,7 +88,7 @@
                         overflow-y: auto;
                         padding-right: 15px;
                         font-size: 10px;
-                        font-color: white;
+                        color: white;
                     }
 
                 }

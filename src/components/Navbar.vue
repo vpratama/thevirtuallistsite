@@ -19,6 +19,7 @@
 <style lang="scss" scoped>
     // Navbar Styles
     .navbar {
+        z-index: 100;
         &-brand {
             color: #FFFFFF;
             font-weight: bold;
@@ -48,5 +49,9 @@
                 font-weight: bold;
             }
         }
+    }
+
+    .submenu {
+        z-index: 101;
     }
 </style>
