@@ -1,62 +1,83 @@
 <template>
-    <div class="row d-flex justify-content-center align-items-center pt-5 ml-0 mr-0">
-        <div class="col-6">
-            <b-card-group deck>
-                <b-card 
-                    title="Takina Inoue"
-                    style="height: 40vw;">
-                        <img 
-                            src="https://static.zerochan.net/Inoue.Takina.1024.3693301.webp" 
-                            alt="Takina Inoue" 
-                            style="height: 30vw; object-fit: cover;">
-                    <b-card-text>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse odio metus, condimentum in ipsum sit amet, iaculis placerat leo. 
-                    </b-card-text>
-                </b-card>
-                <b-card 
-                    title="Mihari Oyama"
-                    style="height: 40vw;">
-                        <img 
-                            src="https://static.zerochan.net/Oyama.Mihari.1024.3803506.webp" 
-                            alt="Mihari Oyama" 
-                            style="height: 30vw; object-fit: cover;">
-                    <b-card-text>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse odio metus, condimentum in ipsum sit amet, iaculis placerat leo. 
-                    </b-card-text>
-                </b-card>
-            </b-card-group>
+    <div class="d-flex" :style="{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'top center', height: '94vh' }">
+        <b-list-group>
+            <b-list-group-item 
+                v-for="(item, index) in items" 
+                :key="index" 
+                class="custom-list-item" 
+                :class="{ active: selectedItem === index }"
+                @click="selectItem(item, index)">
+                {{ item.name }}
+            </b-list-group-item>
+        </b-list-group>
+        <div class="row description">
+            <div class="col-8">
+                <h3>{{ selectedItemDesc.name }}</h3>
+                <p align="justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean enim sem, ullamcorper vitae vestibulum non, efficitur ut odio. Suspendisse vel eleifend diam.
+                </p>
+            </div>
         </div>
     </div>
 </template>
 
+<script>
+import takinaImage from '../../src/assets/cosu/takina.png';
+import mihariImage from '../../src/assets/cosu/mihari.jpg';
+
+export default {
+    data() {
+        return {
+            selectedItemDesc: { name: 'Takina Inoue', backgroundImage: takinaImage },
+            items: [
+                { name: 'Takina Inoue', backgroundImage: takinaImage },
+                { name: 'Mihari Oyama', backgroundImage: mihariImage }
+            ],
+            selectedItem: 0, // Set the default active item to the first item (index 0)
+            backgroundImage: takinaImage // Default background image
+        };
+    },
+    methods: {
+        selectItem(item, index) {
+            this.selectedItem = index; // Set the selected item
+            this.selectedItemDesc = item
+            this.backgroundImage = this.items[index].backgroundImage; // Update the background image
+            console.log(`Selected item: ${this.items[index].name}`);
+        }
+    }
+};
+</script>
+
 <style lang="scss" scoped>
-    /* hp panjang */
-    @media (min-width: 280px) and (max-width: 320px) {
-        
+.d-flex {
+    .custom-list-item {
+    &.active {
+        font-weight: bold; /* Make font bolder when active */
     }
+}
+    .row.description {
+        display: flex; /* Enable flexbox for this row */
+        justify-content: flex-end; /* Align content to the right */
+        align-items: flex-end; /* Align content to the bottom */
+        margin-top: auto; /* Push this row to the bottom */
+        padding: 1rem; /* Add some padding for aesthetics */
+        width: 100%; /* Ensure it takes full width */
+        position: relative; /* Positioning context for absolute children if needed */
+        h3 {
+            color: white;
+        }
 
-    /* hp */
-    @media (min-width: 321px) and (max-width: 480px) {
-        
+        p {
+            color: white;
+        }
     }
+}
 
-    /* tablet mini */
-    @media (min-width: 481px) and (max-width: 768px) {
-        
-    }
-
-    /* tablet / desktop layar kecil */
-    @media (min-width: 769px) and (max-width: 1024px) {
-
-    }
-
-    /* tablet / desktop layar besar */
-    @media (min-width: 1025px) and (max-width: 1200px) {
-        
-    }
-
-    /* tablet / desktop layar extra besar */
-    @media (min-width: 1201px) {
-        
-    }
+/* Responsive styles (if needed) */
+@media (min-width: 280px) and (max-width: 320px) {}
+@media (min-width: 321px) and (max-width: 480px) {}
+@media (min-width: 481px) and (max-width: 768px) {}
+@media (min-width: 769px) and (max-width: 1024px) {}
+@media (min-width: 1025px) and (max-width: 1200px) {}
+@media (min-width: 1201px) {}
 </style>
