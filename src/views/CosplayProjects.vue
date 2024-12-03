@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex" :style="{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'top center', height: '94vh' }">
+    <div class="d-flex" :style="{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center 20%', height: '94vh' }">
         <b-list-group>
             <b-list-group-item 
                 v-for="(item, index) in items" 
