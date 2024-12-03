@@ -1,29 +1,51 @@
 <template>
-    <div class="container-fluid">
-      <div class="image-container">
-        <div class="row">
-          <img
-            v-for="i in 21"
-            :key="i"
-            class="col-lg-4 img-fluid img-thumbnail"
-            :src="`https://picsum.photos/500/500/?image=${i}`"
-            @click="openModal(`https://picsum.photos/500/500/?image=${i}`)"
-          />
-        </div>
+  <div class="container-fluid">
+    <div class="image-container">
+      <div class="row">
+        <img
+          v-for="i in 10"
+          :key="i"
+          class="col-md-4 img-fluid img-thumbnail square-img"
+          :src="`/img/takina/${i}.jpg`"
+          @click="openModal(`/img/takina/${i}.jpg`)"
+        />
+        <img
+          v-for="i in 15"
+          :key="i"
+          class="col-md-4 img-fluid img-thumbnail square-img"
+          :src="`/img/mihari/${i}.jpg`"
+          @click="openModal(`/img/mihari/${i}.jpg`)"
+        />
       </div>
-      <ImageModal
-        :isOpen="isModalOpen"
-        :imageSrc="selectedImage"
-        @close="closeModal"
-      />
     </div>
+    <ImageModal
+      :isOpen="isModalOpen"
+      :imageSrc="selectedImage"
+      @close="closeModal"
+    />
+  </div>
 </template>
 
 <style scoped>
 .image-container {
-  max-height: 90vh; /* Set the maximum height to 90vh */
-  overflow-y: auto; /* Enable vertical scrolling */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.square-img {
+  width: 100%; /* Full width of the column */
+  height: 50vh; /* Set a fixed height to make it square */
+  object-fit: cover; /* Ensures the image covers the area */
+  padding-left: 0;
+  padding-right: 0;
 }
 </style>
   
@@ -50,35 +72,3 @@
     },
   };
 </script>
-
-<style lang="scss" scoped>
-    /* hp panjang */
-    @media (min-width: 280px) and (max-width: 320px) {
-        
-    }
-
-    /* hp */
-    @media (min-width: 321px) and (max-width: 480px) {
-        
-    }
-
-    /* tablet mini */
-    @media (min-width: 481px) and (max-width: 768px) {
-        
-    }
-
-    /* tablet / desktop layar kecil */
-    @media (min-width: 769px) and (max-width: 1024px) {
-
-    }
-
-    /* tablet / desktop layar besar */
-    @media (min-width: 1025px) and (max-width: 1200px) {
-        
-    }
-
-    /* tablet / desktop layar extra besar */
-    @media (min-width: 1201px) {
-        
-    }
-</style>

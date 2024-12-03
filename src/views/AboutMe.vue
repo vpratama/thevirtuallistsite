@@ -52,7 +52,7 @@
                 }
             }
             .col-md-8.cover {
-                background-image: url(../../src/assets/photo/front.jpg);
+                background-image: url(/cover/about.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
@@ -98,7 +98,7 @@
                 }
             }
             .col-md-8.cover {
-                background-image: url(../../src/assets/photo/front.jpg);
+                background-image: url(/cover/about.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
@@ -134,7 +134,7 @@
                 }
             }
             .col-md-8.cover {
-                background-image: url(../../src/assets/photo/front.jpg);
+                background-image: url(/cover/about.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
@@ -161,7 +161,7 @@
                 }
             }
             .col-md-8.cover {
-                background-image: url(../../src/assets/photo/front.jpg);
+                background-image: url(/cover/about.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
@@ -188,7 +188,7 @@
                 }
             }
             .col-md-8.cover {
-                background-image: url(../../src/assets/photo/front.jpg);
+                background-image: url(/cover/about.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
@@ -215,7 +215,7 @@
                 }
             }
             .col-md-8.cover {
-                background-image: url(../../src/assets/photo/front.jpg);
+                background-image: url(/cover/about.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;

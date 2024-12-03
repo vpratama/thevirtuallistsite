@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex" :style="{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center 20%', height: '94vh' }">
+    <div class="d-flex" :style="{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center center', height: '94vh' }">
         <b-list-group>
             <b-list-group-item 
                 v-for="(item, index) in items" 
@@ -16,25 +16,24 @@
                 <p align="justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean enim sem, ullamcorper vitae vestibulum non, efficitur ut odio. Suspendisse vel eleifend diam.
                 </p>
+                <router-link :to="{ 'name': 'cosplaygalery', 'params': { 'name': selectedItemDesc.link }}" class="btn btn-primary">See My Galery...</router-link>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import takinaImage from '../../src/assets/cosu/takina.png';
-import mihariImage from '../../src/assets/cosu/mihari.jpg';
 
 export default {
     data() {
         return {
-            selectedItemDesc: { name: 'Takina Inoue', backgroundImage: takinaImage },
+            selectedItemDesc: { name: 'Takina Inoue', backgroundImage: '/img/takina/1.jpg', link: 'takina' },
             items: [
-                { name: 'Takina Inoue', backgroundImage: takinaImage },
-                { name: 'Mihari Oyama', backgroundImage: mihariImage }
+                { name: 'Takina Inoue', backgroundImage: '/img/takina/1.jpg', link: 'takina' },
+                { name: 'Mihari Oyama', backgroundImage: '/img/mihari/1.jpg', link: 'mihari' }
             ],
             selectedItem: 0, // Set the default active item to the first item (index 0)
-            backgroundImage: takinaImage // Default background image
+            backgroundImage: '/img/takina/1.jpg' // Default background image
         };
     },
     methods: {

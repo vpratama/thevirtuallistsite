@@ -1,15 +1,26 @@
 <template>
     <div class="container d-flex justify-content-center align-items-center pt-5">
         <div class="col-md-10 text-center">
-            <img class="img-fluid img-thumbnail rounded-circle mb-4" width="300px" height="300px" src="https://cdn.rafled.com/anime-icons/images/FW3qvq0rolDDnECKfAQ4zqJlH1Wm2fBn.jpg" alt="Profile Picture" />
+            <div class="img-container mb-4">
+                <img class="img-fluid img-thumbnail rounded-circle" src="/cover/about.jpg" alt="Profile Picture" />
+            </div>
             <h1>The Virtuallist</h1>
-            <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+            <h3>Contact me on this platform.</h3>
             <div class="social-media mt-3">
                 <a href="https://www.facebook.com/steven.adhityawan" target="_blank" class="me-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30" />
+                    <img src="/logo/facebook.svg" alt="Facebook" width="30" />
                 </a>
                 <a href="https://www.instagram.com/the_virtuallist" target="_blank" class="me-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" />
+                    <img src="/logo/instagram.svg" alt="Instagram" width="30" />
+                </a>
+                <a href="https://wa.me/+6289632030762" target="_blank" class="me-2">
+                    <img src="/logo/whatsapp.svg" alt="WhatsApp" width="30" />
+                </a>
+                <a href="https://bsky.app/profile/thevirtuallist1.bsky.social" target="_blank" class="me-2">
+                    <img src="/logo/bluesky.svg" alt="Bluesky" width="30" />
+                </a>
+                <a href="https://www.threads.net/@the_virtuallist" target="_blank" class="me-2">
+                    <img src="/logo/threads.svg" alt="Threads" width="30" />
                 </a>
             </div>
         </div>
@@ -17,9 +28,19 @@
 </template>
 
 <style scoped>
-    .rounded-circle {
+    .img-container {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
         border-radius: 50%; /* Ensures circular shape */
         overflow: hidden; /* Ensures that the image fits within the circle */
+        position: relative;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the container */
     }
 
     .social-media img {
@@ -29,35 +50,5 @@
 
     .social-media img:hover {
         transform: scale(2);
-    }
-
-    /* hp panjang */
-    @media (min-width: 280px) and (max-width: 320px) {
-        
-    }
-
-    /* hp */
-    @media (min-width: 321px) and (max-width: 480px) {
-        
-    }
-
-    /* tablet mini */
-    @media (min-width: 481px) and (max-width: 768px) {
-        
-    }
-
-    /* tablet / desktop layar kecil */
-    @media (min-width: 769px) and (max-width: 1024px) {
-
-    }
-
-    /* tablet / desktop layar besar */
-    @media (min-width: 1025px) and (max-width: 1200px) {
-        
-    }
-
-    /* tablet / desktop layar extra besar */
-    @media (min-width: 1201px) {
-        
     }
 </style>

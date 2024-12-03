@@ -24,7 +24,7 @@
             display: flex;
             flex-direction: row;
             .col-sm-8.cover {
-                background-image: url(../../src/assets/photo/back.jpg);
+                background-image: url(/cover/home.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
@@ -71,7 +71,7 @@
             display: flex;
             flex-direction: row;
             .col-sm-8.cover {
-                background-image: url(../../src/assets/photo/back.jpg);
+                background-image: url(/cover/home.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
@@ -117,7 +117,7 @@
             display: flex;
             flex-direction: row;
             .col-sm-8.cover {
-                background-image: url(../../src/assets/photo/back.jpg);
+                background-image: url(/cover/home.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
@@ -156,7 +156,7 @@
             width: 99vw;
             padding-right: 0px;
             .col-sm-8.cover {
-                background-image: url(../../src/assets/photo/back.jpg);
+                background-image: url(/cover/home.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
@@ -181,7 +181,7 @@
             width: 99vw;
             padding-right: 0px;
             .col-sm-8.cover {
-                background-image: url(../../src/assets/photo/back.jpg);
+                background-image: url(/cover/home.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
@@ -206,7 +206,7 @@
             width: 99vw;
             padding-right: 0px;
             .col-sm-8.cover {
-                background-image: url(../../src/assets/photo/back.jpg);
+                background-image: url(/cover/home.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 height: 94vh;

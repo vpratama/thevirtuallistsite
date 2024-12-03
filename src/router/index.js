@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import AboutMe from '../views/AboutMe.vue'
 import CosplayProjects from '../views/CosplayProjects.vue'
+import CosplayGalery from '../views/CosplayGalery.vue'
 import Galery from '../views/Galery.vue'
 import Contact from '../views/Contact.vue'
 
@@ -22,6 +23,11 @@ const routes = [
       path: '/cosplayprojects',
       name: 'cosplayprojects',
       component: CosplayProjects
+    },
+    {
+      path: '/cosplayprojects/galery/:name',
+      name: 'cosplaygalery',
+      component: CosplayGalery
     },
     {
       path: '/galery',
