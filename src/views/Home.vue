@@ -6,7 +6,7 @@
             <div class="container">
                 <h1>The Virtuallist.</h1>
                 <h4>INFP | Baker, Driver, Hotelier, Cosplayer, Photographer</h4>
-                <p class="mt-5 mb-5" align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse odio metus, condimentum in ipsum sit amet, iaculis placerat leo. Nullam gravida, sapien ac pulvinar aliquam, nulla tortor vulputate ante, in consectetur tellus massa ut sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Ut nibh magna, porta quis nibh eget, viverra auctor arcu. Ut dolor elit, rutrum vitae varius in, tincidunt sit amet turpis. Aenean consectetur varius sapien, sed rutrum quam ultrices a.</p>
+                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse odio metus, condimentum in ipsum sit amet, iaculis placerat leo. Nullam gravida, sapien ac pulvinar aliquam, nulla tortor vulputate ante, in consectetur tellus massa ut sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Ut nibh magna, porta quis nibh eget, viverra auctor arcu. Ut dolor elit, rutrum vitae varius in, tincidunt sit amet turpis. Aenean consectetur varius sapien, sed rutrum quam ultrices a.</p>
                 <router-link :to="{ name: 'aboutme' }" class="btn btn-primary mb-2">Want to know about me?</router-link>
                 <router-link :to="{ name: 'contactme' }" class="btn btn-outline-primary">Contact me?</router-link>
             </div>
@@ -52,7 +52,9 @@
                         color: white;
                     }
                     p {
-                        font-size: 10px;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        font-size: 15px;
                         color: white;
                     }
                 }
@@ -97,7 +99,9 @@
                         color: white;
                     }
                     p {
-                        font-size: 10px;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        font-size: 15px;
                         color: white;
                     }
                 }
@@ -136,7 +140,7 @@
                         font-size: 30px;
                     }
                     h4 {
-                        font-size: 20px;
+                        font-size: 15px;
                     }
                     p {
                         font-size: 10px;

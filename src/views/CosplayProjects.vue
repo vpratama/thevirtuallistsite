@@ -49,35 +49,188 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.d-flex {
-    .custom-list-item {
-    &.active {
-        font-weight: bold; /* Make font bolder when active */
-    }
-}
-    .row.description {
-        display: flex; /* Enable flexbox for this row */
-        justify-content: flex-end; /* Align content to the right */
-        align-items: flex-end; /* Align content to the bottom */
-        margin-top: auto; /* Push this row to the bottom */
-        padding: 1rem; /* Add some padding for aesthetics */
-        width: 100%; /* Ensure it takes full width */
-        position: relative; /* Positioning context for absolute children if needed */
-        h3 {
-            color: white;
-        }
-
-        p {
-            color: white;
-        }
-    }
-}
 
 /* Responsive styles (if needed) */
-@media (min-width: 280px) and (max-width: 320px) {}
-@media (min-width: 321px) and (max-width: 480px) {}
-@media (min-width: 481px) and (max-width: 768px) {}
-@media (min-width: 769px) and (max-width: 1024px) {}
-@media (min-width: 1025px) and (max-width: 1200px) {}
-@media (min-width: 1201px) {}
+@media (min-width: 280px) and (max-width: 320px) {
+    .d-flex {
+        .custom-list-item {
+        &.active {
+            font-weight: bold; /* Make font bolder when active */
+        }
+    }
+        .row.description {
+            display: flex; /* Enable flexbox for this row */
+            justify-content: flex-end; /* Align content to the right */
+            align-items: flex-end; /* Align content to the bottom */
+            margin-top: auto; /* Push this row to the bottom */
+            padding: 1rem; /* Add some padding for aesthetics */
+            width: 100%; /* Ensure it takes full width */
+            position: relative; /* Positioning context for absolute children if needed */
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            h3 {
+                color: white;
+            }
+
+            p {
+                color: white;
+            }
+        }
+    }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+    .d-flex {
+        .custom-list-item {
+        &.active {
+            font-weight: bold; /* Make font bolder when active */
+        }
+    }
+        .row.description {
+            display: flex; /* Enable flexbox for this row */
+            justify-content: flex-end; /* Align content to the right */
+            align-items: flex-end; /* Align content to the bottom */
+            margin-top: auto; /* Push this row to the bottom */
+            padding: 1rem; /* Add some padding for aesthetics */
+            width: 100%; /* Ensure it takes full width */
+            position: relative; /* Positioning context for absolute children if needed */
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            h3 {
+                color: white;
+            }
+
+            p {
+                color: white;
+            }
+        }
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .d-flex {
+        .custom-list-item {
+        &.active {
+            font-weight: bold; /* Make font bolder when active */
+        }
+    }
+        .row.description {
+            display: flex; /* Enable flexbox for this row */
+            justify-content: flex-end; /* Align content to the right */
+            align-items: flex-end; /* Align content to the bottom */
+            margin-top: auto; /* Push this row to the bottom */
+            padding: 1rem; /* Add some padding for aesthetics */
+            width: 100%; /* Ensure it takes full width */
+            position: relative; /* Positioning context for absolute children if needed */
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            h3 {
+                color: white;
+                font-size: 40px;
+            }
+
+            p {
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .d-flex {
+        .custom-list-item {
+        &.active {
+            font-weight: bold; /* Make font bolder when active */
+        }
+    }
+        .row.description {
+            display: flex; /* Enable flexbox for this row */
+            justify-content: flex-end; /* Align content to the right */
+            align-items: flex-end; /* Align content to the bottom */
+            margin-top: auto; /* Push this row to the bottom */
+            padding: 1rem; /* Add some padding for aesthetics */
+            width: 100%; /* Ensure it takes full width */
+            position: relative; /* Positioning context for absolute children if needed */
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            h3 {
+                color: white;
+                font-size: 40px;
+            }
+
+            p {
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .d-flex {
+        .custom-list-item {
+        &.active {
+            font-weight: bold; /* Make font bolder when active */
+        }
+    }
+        .row.description {
+            display: flex; /* Enable flexbox for this row */
+            justify-content: flex-end; /* Align content to the right */
+            align-items: flex-end; /* Align content to the bottom */
+            margin-top: auto; /* Push this row to the bottom */
+            padding: 1rem; /* Add some padding for aesthetics */
+            width: 100%; /* Ensure it takes full width */
+            position: relative; /* Positioning context for absolute children if needed */
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            h3 {
+                color: white;
+                font-size: 50px;
+            }
+
+            p {
+                color: white;
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media (min-width: 1201px) {
+    .d-flex {
+        .custom-list-item {
+        &.active {
+            font-weight: bold; /* Make font bolder when active */
+        }
+    }
+        .row.description {
+            display: flex; /* Enable flexbox for this row */
+            justify-content: flex-end; /* Align content to the right */
+            align-items: flex-end; /* Align content to the bottom */
+            margin-top: auto; /* Push this row to the bottom */
+            padding: 1rem; /* Add some padding for aesthetics */
+            width: 100%; /* Ensure it takes full width */
+            position: relative; /* Positioning context for absolute children if needed */
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            h3 {
+                color: white;
+                font-size: 70px;
+            }
+
+            p {
+                color: white;
+                font-size: 40px;
+            }
+        }
+    }
+}
 </style>
