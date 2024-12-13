@@ -6,7 +6,7 @@
             <div class="container">
                 <h1>The Virtuallist.</h1>
                 <h4>INFP | Baker, Driver, Hotelier, Cosplayer, Photographer</h4>
-                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse odio metus, condimentum in ipsum sit amet, iaculis placerat leo. Nullam gravida, sapien ac pulvinar aliquam, nulla tortor vulputate ante, in consectetur tellus massa ut sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Ut nibh magna, porta quis nibh eget, viverra auctor arcu. Ut dolor elit, rutrum vitae varius in, tincidunt sit amet turpis. Aenean consectetur varius sapien, sed rutrum quam ultrices a.</p>
+                <p align="justify">A creative soul on a journey through diverse passions, blending the artistry of baking, the precision of driving, the warmth of hospitality, the magic of cosplay, and the storytelling of photography. An INFP at heart, driven by imagination and a desire to craft experiences that inspire, comfort, and captivate.</p>
                 <router-link :to="{ name: 'aboutme' }" class="btn btn-primary mb-2">Want to know about me?</router-link>
                 <router-link :to="{ name: 'contactme' }" class="btn btn-outline-primary">Contact me?</router-link>
             </div>

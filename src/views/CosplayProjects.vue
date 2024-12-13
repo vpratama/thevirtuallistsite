@@ -14,7 +14,7 @@
             <div class="col-8">
                 <h3>{{ selectedItemDesc.name }}</h3>
                 <p align="justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean enim sem, ullamcorper vitae vestibulum non, efficitur ut odio. Suspendisse vel eleifend diam.
+                    {{ selectedItemDesc.desc }}
                 </p>
                 <router-link :to="{ 'name': 'cosplaygalery', 'params': { 'name': selectedItemDesc.link }}" class="btn btn-primary">See My Galery...</router-link>
             </div>
@@ -27,10 +27,10 @@
 export default {
     data() {
         return {
-            selectedItemDesc: { name: 'Takina Inoue', backgroundImage: '/img/takina/1.jpg', link: 'takina' },
+            selectedItemDesc: { name: 'Takina Inoue', backgroundImage: '/img/takina/1.jpg', link: 'takina', desc: 'Dressed as Takina Inoue from Lycoris Recoil, The Virtuallist brings the disciplined yet endearing Lycoris agent to life with incredible attention to detail. From Takina’s signature navy-blue uniform to her poised demeanor and sharp gaze, every aspect of the cosplay exudes precision and respect for the character. Channeling Takina’s determined and caring nature, The Virtuallist embodies her quiet strength and unwavering loyalty, creating a portrayal that captures both her fierce combat skills and her softer, more relatable side. With every pose, it’s as though Takina has stepped out of the screen and into reality, blending seamlessly with The Virtuallist’s creative energy.' },
             items: [
-                { name: 'Takina Inoue', backgroundImage: '/img/takina/1.jpg', link: 'takina' },
-                { name: 'Mihari Oyama', backgroundImage: '/img/mihari/1.jpg', link: 'mihari' }
+                { name: 'Takina Inoue', backgroundImage: '/img/takina/1.jpg', link: 'takina', desc: 'Dressed as Takina Inoue from Lycoris Recoil, The Virtuallist brings the disciplined yet endearing Lycoris agent to life with incredible attention to detail. From Takina’s signature navy-blue uniform to her poised demeanor and sharp gaze, every aspect of the cosplay exudes precision and respect for the character. Channeling Takina’s determined and caring nature, The Virtuallist embodies her quiet strength and unwavering loyalty, creating a portrayal that captures both her fierce combat skills and her softer, more relatable side. With every pose, it’s as though Takina has stepped out of the screen and into reality, blending seamlessly with The Virtuallist’s creative energy.' },
+                { name: 'Mihari Oyama', backgroundImage: '/img/mihari/1.jpg', link: 'mihari', desc: 'As Mihari Oyama from Onii-chan wa Oshimai!, The Virtuallist channels the quirky brilliance and caring nature of the inventive younger sister. Dressed in Mihari’s casual yet adorable outfit, complete with her iconic lab coat and glasses, The Virtuallist captures her mix of intellect and playful energy. With an expressive pose and a warm, knowing smile, the cosplay brings Mihari’s determination to guide her sibling and her mischievous yet well-meaning personality to life. Every detail, from her hairstyle to her curious aura, reflects The Virtuallist’s knack for portraying characters with authenticity and charm.' }
             ],
             selectedItem: 0, // Set the default active item to the first item (index 0)
             backgroundImage: '/img/takina/1.jpg' // Default background image
@@ -134,7 +134,7 @@ export default {
 
             p {
                 color: white;
-                font-size: 20px;
+                font-size: 10px;
             }
         }
     }
@@ -165,7 +165,7 @@ export default {
 
             p {
                 color: white;
-                font-size: 20px;
+                font-size: 10px;
             }
         }
     }
@@ -196,7 +196,7 @@ export default {
 
             p {
                 color: white;
-                font-size: 30px;
+                font-size: 15px;
             }
         }
     }
@@ -227,7 +227,7 @@ export default {
 
             p {
                 color: white;
-                font-size: 40px;
+                font-size: 20px;
             }
         }
     }
