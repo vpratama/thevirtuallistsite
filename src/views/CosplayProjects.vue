@@ -75,6 +75,7 @@ export default {
 
             p {
                 color: white;
+                font-size: 5px;
             }
         }
     }
@@ -104,6 +105,7 @@ export default {
 
             p {
                 color: white;
+                font-size: 10px;
             }
         }
     }
