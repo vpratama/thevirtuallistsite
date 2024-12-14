@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-lg-4">
             <div class="container d-flex flex-column justify-content-center h-100">
                 <h1>About Me</h1>
                 <h4>The Virtuallist</h4>
@@ -15,7 +15,7 @@
                 <router-link :to="{ name: 'cosplayprojects' }" class="btn btn-primary mb-2">Cosplay projects</router-link>
             </div>
         </div>
-        <div class="col-md-8 cover">
+        <div class="col-lg-8 cover">
             
         </div>
     </div>
@@ -30,7 +30,7 @@
             width: 100vw;
             margin-right: 0;
             margin-left: 0;
-            .col-md-4 {
+            .col-lg-4 {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -49,7 +49,7 @@
                     }
 
                     p.scrollable {
-                        max-height: 500px;
+                        max-height: 350px;
                         overflow-y: auto;
                         padding-right: 15px;
                         font-size: 10px;
@@ -58,7 +58,7 @@
 
                 }
             }
-            .col-md-8.cover {
+            .col-lg-8.cover {
                 background-image: url(/cover/about.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -76,7 +76,7 @@
             width: 100vw;
             margin-right: 0;
             margin-left: 0;
-            .col-md-4 {
+            .col-lg-4 {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -95,7 +95,7 @@
                     }
 
                     p.scrollable {
-                        max-height: 500px;
+                        max-height: 350px;
                         overflow-y: auto;
                         padding-right: 15px;
                         font-size: 15px;
@@ -104,7 +104,7 @@
 
                 }
             }
-            .col-md-8.cover {
+            .col-lg-8.cover {
                 background-image: url(/cover/about.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -120,15 +120,15 @@
     @media (min-width: 481px) and (max-width: 768px) {
         .row {
             width: 100vw;
-            .col-md-4 {
+            margin-right: 0;
+            margin-left: 0;
+            .col-lg-4 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                z-index: 99;
                 .container {
-                    padding-left: 50px;
-                    .scrollable {
-                        max-height: 500px;
-                        overflow-y: auto;
-                        padding-right: 15px;
-                    }
-
                     h1 {
                         font-size: 30px;
                     }
@@ -136,17 +136,19 @@
                         font-size: 20px;
                     }
                     p {
+                        max-height: 500px;
+                        overflow-y: auto;
+                        padding-right: 15px;
                         font-size: 10px;
                     }
                 }
             }
-            .col-md-8.cover {
+            .col-lg-8.cover {
                 background-image: url(/cover/about.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
                 height: 94vh;
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
                 margin: 0 0 0 0;
                 padding: 0 0 0 0;
             }
@@ -157,17 +159,17 @@
     @media (min-width: 769px) and (max-width: 1024px) {
         .row {
             width: 100vw;
-            .col-md-4 {
+            .col-lg-4 {
                 .container {
                     padding-left: 50px;
                     .scrollable {
-                        max-height: 500px;
+                        max-height: 350px;
                         overflow-y: auto;
                         padding-right: 15px;
                     }
                 }
             }
-            .col-md-8.cover {
+            .col-lg-8.cover {
                 background-image: url(/cover/about.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -184,17 +186,17 @@
     @media (min-width: 1025px) and (max-width: 1200px) {
         .row {
             width: 100vw;
-            .col-md-4 {
+            .col-lg-4 {
                 .container {
                     padding-left: 50px;
                     .scrollable {
-                        max-height: 500px;
+                        max-height: 350px;
                         overflow-y: auto;
                         padding-right: 15px;
                     }
                 }
             }
-            .col-md-8.cover {
+            .col-lg-8.cover {
                 background-image: url(/cover/about.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -211,17 +213,17 @@
     @media (min-width: 1201px) {
         .row {
             width: 100vw;
-            .col-md-4 {
+            .col-lg-4 {
                 .container {
                     padding-left: 50px;
                     .scrollable {
-                        max-height: 500px;
+                        max-height: 350px;
                         overflow-y: auto;
                         padding-right: 15px;
                     }
                 }
             }
-            .col-md-8.cover {
+            .col-lg-8.cover {
                 background-image: url(/cover/about.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
